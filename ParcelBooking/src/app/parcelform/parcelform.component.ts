@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./parcelform.component.css']
 })
 export class ParcelformComponent {
+receiveraddress: String | undefined
 
 }

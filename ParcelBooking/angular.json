@@ -95,8 +95,20 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css",
               "D:/PROJECT/ParcelBooking/node_modules/bootstrap/dist/css/bootstrap.min.css"
+              
             ],
-            "scripts": []
+            "scripts": [{
+              "architect": {
+                "build": {
+                  "options": {
+                    "scripts": [
+                      "node_modules/jquery/dist/jquery.min.js"
+                    ]
+                  }
+                }
+              }
+            }
+            ]
           }
         }
       }

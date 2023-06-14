@@ -14,6 +14,10 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { TrackingComponent } from './tracking/tracking.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AdminhomeComponent } from './adminhome/adminhome.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { NavbarComponent } from './navbar/navbar.component';
     HomeComponent,
     MainpageComponent,
     ParcelformComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent,
+    TrackingComponent,
+    AdminDashboardComponent,
+    AdminhomeComponent
   ],
   imports: [
     BrowserModule,

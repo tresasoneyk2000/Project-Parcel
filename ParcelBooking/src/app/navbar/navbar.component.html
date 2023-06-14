@@ -1,5 +1,5 @@
-<!-- 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#">ParcelBooking</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -29,7 +29,7 @@
         </ul>
       </div>
     </div>
-  </nav> -->
+  </nav> --> 
   <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#">ParcelBooking</a>
@@ -66,14 +66,30 @@
     .nav-item button:hover,
     .nav-item button:focus {
       background-color: white;
+    
+      
     }
-  
+    .nav-item button.text {
+  color: white;
+}
+
+.nav-item button.text:hover,
+.nav-item button.text:focus {
+  color: black;
+  background-color: white;
+}
+
+
+    .text:hover span{color:black};
+    .nav-item:fixed,
     .nav-item button:hover,
     .nav-item button:focus,
     .nav-item button:hover span,
-    .nav-item button:focus span {
-      color: black;
-    }
+    .nav-item button:hover span {
+  color: rgb(231, 8, 8);
+}
+
+    
   </style>
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -86,22 +102,21 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <button mat-button routerLink="/mainpage" class="text-white">Home</button>
+            <button mat-button routerLink="/mainpage" class="text">Home</button>
           </li>
-          <li class="nav-item">
-            <button mat-button routerLink="/about" class="text-white">About</button>
-          </li>
+          
           <li class="nav-item dropdown">
-            <button mat-button [matMenuTriggerFor]="servicesMenu" class="text-white">Services</button>
+            <button mat-button [matMenuTriggerFor]="servicesMenu" class="text">Services</button>
             <mat-menu #servicesMenu="matMenu">
               <button mat-menu-item routerLink="/parcelform">Add Parcel</button>
-              <button mat-menu-item routerLink="/track">Track</button>
+              <button mat-menu-item routerLink="/tracking">Track</button>
               <button mat-menu-item routerLink="/search">Search</button>
             </mat-menu>
           </li>
           <li class="nav-item">
-            <button mat-button routerLink="/about" class="text-white">Contact</button>
+            <button mat-button routerLink="/home" class="text">LogOut</button>
           </li>
+          
         </ul>
       </div>
     </div>
