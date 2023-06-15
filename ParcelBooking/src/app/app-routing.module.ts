@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AdminhomeComponent } from './adminhome/adminhome.component';
 // import { AdminDashboardComponent, AdminDashboardComponentimplements } from './admin-dashboard/admin-dashboard.component';
 // import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { HomeComponent } from './home/home.component';
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path:'parcelform', component:ParcelformComponent},
   {path:'mainpage/parcelform', component:ParcelformComponent},
   {path:'tracking',component:TrackingComponent},
-  {path:'admindashboard',component:AdminDashboardComponent}
+  {path:'admindashboard',component:AdminDashboardComponent},
+  {path:'adminhome', component:AdminhomeComponent}
 ];
 
 @NgModule({

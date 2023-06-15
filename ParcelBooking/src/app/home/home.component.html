@@ -1,121 +1,246 @@
 
-<!-- <style>
-  /* Add custom styles here */
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  .container {
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    height: 100%;
-  }
-
-  h1 {
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-
-  .lead {
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-
-  .btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-  }
-
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
-</style> -->
+<!-- <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link href="D:\PROJECT\ParcelBooking\node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href='D:\PROJECT\ParcelBooking\node_modules\bootstrap\dist\css\bootstrap.min.css' rel='stylesheet'>
+    
+</head> -->
 
 
-<!-- <div class="container mt-8">
-    <h1>Welcome to Parcel Booking!</h1>
-    <p class="lead">We offer fast and reliable parcel delivery services. Book your parcel today!</p>
-  
-    <div class="row mt-6">
-      <div class="col-lg-6">
-        <h2>Register here</h2>
-        <p>Don't have an account? No worries, sign up here to enjoy our services</p>
-        <a routerLink="/signup" class="btn btn-primary">Sign up</a>
-      </div>
-      <div class="col-lg-6">
-        <h2>Login</h2>
-        <p>Already have an account? Great! Let's get started with our services</p>
-        <a routerLink="/login" class="btn btn-primary">Sign in</a>
-      </div>
-    </div>
-  </div>
-   -->
 
 
-   <style>
-    /* .card {
-      background: linear-gradient(to bottom right, #e66465, #9198e5);
-      color: white;
-    } */
-
-    /* home.component.css */
-
-   #bg{
-  background-color:thistle;
-  background-size: 100% 100%;
-  color: white;
-}
-
-.container {
-  margin-top: 8rem; /* Adjust this value as needed */
-}
-
-.card {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
-}
-
-.card:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
 
 
-  </style>
-  <div id="bg">
-  <div  style="text-align: center;" class="container mt-8">
-    <h1 >Welcome to Parcel Booking!</h1>
-    <p class="lead">We offer fast and reliable parcel delivery services. Book your parcel today!</p>
-  
-    <div class="row mt-6">
-      <div class="col-lg-6">
-        <div class="card">
-          <div class="card-body">
-            <h2>Register here</h2>
-            <p>Don't have an account? No worries, sign up here to enjoy our services</p>
-            <a routerLink="/signup" class="btn btn-primary">Sign up</a>
-          </div>
+
+
+
+
+
+
+
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg py-1 sticky-top navbar-light bg-black">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">
+                Parcel Booking</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Signup/Login
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " routerLink="/signup">Register</a></li>
+                            <li><a class="dropdown-item " routerLink="/login">Login</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item " routerLink="/login">Admin login</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " routerLink="/login">Add parcel</a></li>
+                            <li><a class="dropdown-item" routerLink="/login">view parcel</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" routerLink="/login">Track parcel</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact us</a>
+                    </li>
+
+                </ul>
+                <!--- <button class="btn btn-primary ms-lg-3">Login</button> -->
+
+            </div>
+         </div>
+    </nav>
+
+    <!-- navigationbar end here -->
+    <!-- container -->
+
+    <div class="parcel-Booking vh-100 d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mx-auto text-center">
+                    <h1 class="heading display-4 text-white">Welcome to Parcel Booking!</h1>
+                    <p class="text-white my-3">We offer fast and reliable parcel delivery services. Book your parcel
+                        today!
+                        We make sending your parcels hassle-free and convenient. Whether you're shipping books, gifts,
+                        or important
+                        documents, we've got you covered. With our reliable shipping partners and competitive rates,
+                        you can trust us to deliver your parcels safely and on time.
+                    </p>
+                    <a  routerLink="/login" class="btn btn-dark text-white">Get Started</a>
+                </div>
+            </div>
+
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card">
-          <div class="card-body">
-            <h2>Login</h2>
-            <p>Already have an account? Great! Let's get started with our services</p>
-            <a routerLink="/login" class="btn btn-primary">Login</a>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
-<button routerLink="/admindashboard">admin</button>
+
+    <!-- services section -->
+    <section id="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h2 class="text-black">Services</h2>
+                    <h1>Our services</h1>
+                    <!-- <p> Request a pickup and we'll collect your parcel from your doorstep.</p> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service  card-effect">
+                        <div class="iconbox">
+                            <i class='bx bxs-package'></i>
+                        </div>
+                        <!-- <img src="./Assests/delivery-man.png" alt="Doorstep Pickup"></div> -->
+                        <h4 class="mt-4 mb-2">Doorstep Pickup</h4>
+                        <p>Request a pickup and we'll collect your parcel from your doorstep.</p>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='bx bxs-location-plus'></i>
+                        </div>
+                        <!-- <img src="./Assests/delivery-man.png" alt="Doorstep Pickup"></div> -->
+                        <h4 class="mt-4 mb-2">Tracking On The Go</h4>
+                        <p>Track your parcel's journey in real-time, right from your mobile device.</p>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service  card-effect">
+                        <div class="iconbox">
+                            <i class='bx bx-timer'></i>
+                        </div>
+                        <!-- <img src="./Assests/delivery-man.png" alt="Doorstep Pickup"></div> -->
+                        <h4 class="mt-4 mb-2">Schedule a Pickup</h4>
+                        <p>Easily schedule a pickup time that suits your convenience.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+        
+    </section>
+    <!-- ends here -->
+
+    <!-- features -->
+    <section class="row w-100 py-0 bg-light" id="features">
+        <div class="col-lg-6 col-img"></div>
+        <div class="col-lg-6 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h6 class="text-primary">Why To Choose Us</h6>
+                        <h1>We Offer Best Services for delivering Packages</h1>
+                        <p>We provide express parcel transportation
+                            Our operations, infrastructure and technology enable our customers to transact with us and
+                            our partners at low costs.</p>
+                        <!-- <div class="feature d-flex mt-5">
+                                <div class="iconbox me-3">
+                                    <i class='bx bxs-doughnut-chart'></i>
+                                </div>
+                                <div>
+                                    <img src="./Assests/delivery-man.png" alt="Doorstep Pickup"></div>
+                                    <h4 class="mt-4 mb-2">Doorstep Pickup</h4>
+                                    <p>Request a pickup and we'll collect your parcel from your doorstep.</p>
+            
+                              </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- features ends here -->
+
+    <!-- Team section -->
+    <section id="team" class="bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">Team</h6>
+                    <h1>Meet Our Crew Members</h1>
+
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="team-member card-effect">
+                        <img src="assets/images/suv.JPG" alt="">
+                        <h4 class="mt-4 mb-0">suvarnarao</h4>
+                        <p>Software developer.</p>
+                        <div class="social-icons" >
+                            <a href="#"><i class="bx bxl-facebook"></i></a>
+                            <a href="#"><i class="bx bxl-twitter"></i></a>
+                            <a href="#"><i class="bx bxl-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                    <div class="team-member card-effect">
+                        <img src="" alt="">
+                        <h4 class="mt-4 mb-0">Anuja Ajay</h4>
+                        <p>Software developer.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="bx bxl-facebook"></i></a>
+                            <a href="#"><i class="bx bxl-twitter"></i></a>
+                            <a href="#"><i class="bx bxl-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                    <div class="team-member card-effect">
+                        <img src="" alt="">
+                        <h4 class="mt-4 mb-0">Tresa Sony</h4>
+                        <p>Software developer.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="bx bxl-facebook"></i></a>
+                            <a href="#"><i class="bx bxl-twitter"></i></a>
+                            <a href="#"><i class="bx bxl-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <app-footer></app-footer>

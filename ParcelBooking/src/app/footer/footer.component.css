@@ -1,11 +1,17 @@
 .footer {
-    background-color: #343a40;
-    padding: 20px;
-    color: #ffffff;
-    margin-top: 40px; /* Add margin to create space between content and footer */
-  }
+  background-color: #343a40;
+  /* position: relative; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
 
   .footer-icons {
     font-size: 24px;
     margin-right: 10px;
   }
+  

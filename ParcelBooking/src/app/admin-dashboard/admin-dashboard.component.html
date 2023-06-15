@@ -15,28 +15,119 @@
       </li>
     </ul>
   </div> -->
-
-<div class="main-content">
-<table class="parcel-table">
-    <thead>
-      <tr>
-        <th>Parcel ID</th>
-        <th>Action</th>
+  <style>
+    .nav-item button:hover,
+    .nav-item button:focus {
+      background-color: white;
+    
       
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let parcel of parcels">
-        <td>{{ parcel.id }}</td>
-        <td>
-          <button class="view-details-button" (click)="openDetailsPopup(parcel)">View Details</button>
-          <button class="tracking-button" (click)="trackingStatusPopup(parcel)">Tracking Status</button>
-        </td>
+    }
+    .nav-item button.text {
+  color: white;
+}
 
-      </tr>
-    </tbody>
-  </table>
+.nav-item button.text:hover,
+.nav-item button.text:focus {
+  color: rgb(68, 65, 65);
+  background-color: white;
+}
+.button-container {
+  margin-right: 20px;
+}
+
+    .text:hover span{color:rgb(0, 0, 0)};
+    .nav-item:fixed,
+    .nav-item button:hover,
+    .nav-item button:focus,
+    .nav-item button:hover span,
+    .nav-item button:hover span {
+  color: rgb(231, 8, 8);
+}
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .nav-item {
+    margin-left: 10px;
+  }
+
+  .nav-item button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+
+
+    
+  </style>
+  <div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">ParcelBooking</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <button mat-button routerLink="/adminhome" class="text">Home</button>
+        </li>
+        <li class="nav-item">
+            <button mat-button routerLink="/admindashboard" class="text">View Parcel</button>
+          </li>
+          <li class="nav-item">
+            <button mat-button routerLink="/" class="text">View Users</button>
+          </li>
+
+        <!-- <li class="nav-item dropdown">
+          <button mat-button [matMenuTriggerFor]="servicesMenu" class="text">Services</button>
+          <mat-menu #servicesMenu="matMenu">
+            <button mat-menu-item routerLink="/parcelform">Add Parcel</button>
+            <button mat-menu-item routerLink="/tracking">Track</button>
+            <button mat-menu-item routerLink="/search">Search</button>
+          </mat-menu>
+        </li> -->
+        <li class="nav-item">
+          <button mat-button routerLink="/home" class="text">LogOut</button>
+        </li>
+      </ul>
+    </div>
   </div>
+</nav>
+</div>
+<br>
+<div class="container">
+    <div class="main-content">
+      <table class="parcel-table">
+        <thead>
+          <tr>
+            <th>Parcel ID</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let parcel of parcels" style="margin-bottom: 10px;">
+            <td>{{ parcel.id }}</td>
+            <td>
+              <button class="btn btn-dark" style="margin-right: 20px;" (click)="openDetailsPopup(parcel)">View Details</button>
+              <button class="btn btn-dark" (click)="trackingStatusPopup(parcel)">Tracking Status</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+  
   <!-- Parcel Details Popup -->
   <div class="parcel-details-popup" *ngIf="showDetailsPopup">
     <div class="parcel-details-container">
@@ -99,3 +190,4 @@
       <button class="close-button" (click)="closeTrackingPopup()">Close</button>
     </div>
   </div>
+</div>
