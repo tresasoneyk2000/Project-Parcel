@@ -1,296 +1,59 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Parcel Form</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <style>
-   body {
-      padding: 20px;
-    }
-    .form-container {
-      background: linear-gradient(135deg, #ff6363, #5b89ff);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    }
-    .form-title {
-      margin-bottom: 20px;
-    }
-  </style>
-</head>
-<body>
-    <app-navbar></app-navbar>
-  <div class="container">
-    <h1 class="form-title">Parcel Form</h1>
-    <form>
-      <h2 class="form-title">Sender Information</h2>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="senderName">Name</label>
-          <input type="text" class="form-control" id="senderName" placeholder="Enter sender's name">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="senderAddress">Address</label>
-          <input type="text" class="form-control" id="senderAddress" placeholder="Enter sender's address">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="senderCity">City</label>
-          <input type="text" class="form-control" id="senderCity" placeholder="Enter sender's city">
-        </div>
-        <div class="form-group col-md-4">
-          <label for="senderState">State</label>
-          <select id="senderState" class="form-control">
-            <option selected>Select state</option>
-            <option>State 1</option>
-            <option>State 2</option>
-             Add more options for states -->
-          <!--</select> -->
-        <!-- </div>
-        <div class="form-group col-md-4">
-          <label for="senderZip">Zip</label>
-          <input type="text" class="form-control" id="senderZip" placeholder="Enter sender's zip code">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="senderPhone">Phone</label>
-          <input type="text" class="form-control" id="senderPhone" placeholder="Enter sender's phone number">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="senderEmail">Email</label>
-          <input type="email" class="form-control" id="senderEmail" placeholder="Enter sender's email">
-        </div>
-      </div>
-
-      <h2 class="form-title">Receiver Information</h2>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="receiverName">Name</label>
-          <input type="text" class="form-control" id="receiverName" placeholder="Enter receiver's name">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="receiverAddress">Address</label>
-          <input type="text" class="form-control" id="receiverAddress" placeholder="Enter receiver's address">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="receiverCity">City</label>
-          <input type="text" class="form-control" id="receiverCity" placeholder="Enter receiver's city">
-        </div>
-        <div class="form-group col-md-4">
-          <label for="receiverState">State</label>
-          <select id="receiverState" class="form-control">
-            <option selected>Select state</option>
-            <option>State 1</option>
-            <option>State 2</option>
-             Add more options for states -->
-          <!-- </select>
-        </div>
-        <div class="form-group col-md-4">
-          <label for="receiverZip">Zip</label>
-          <input type="text" class="form-control" id="receiverZip" placeholder="Enter receiver's zip code">
-        </div>
-      </div> -->
-      <!-- <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="receiverPhone">Phone</label>
-          <input type="text" class="form-control" id="receiverPhone" placeholder="Enter receiver's phone number">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="receiverEmail">Email</label>
-          <input type="email" class="form-control" id="receiverEmail" placeholder="Enter receiver's email">
-        </div>
-      </div> -->
-<!-- 
-  <h2 class="form-title">Parcel Information</h2>
-      <div class="form-group">
-        <label for="parcelWeight">Weight</label>
-        <input type="text" class="form-control" id="parcelWeight" placeholder="Enter parcel weight">
-      </div>
-      <div class="form-group">
-        <label for="parcelDescription">Description</label>
-        <textarea class="form-control" id="parcelDescription" rows="3" placeholder="Enter parcel description"></textarea>
-      </div>
-      
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
-</body>
-</html>   -->
 <app-navbar></app-navbar>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Add Parcel</title>
-  <!-- Add any necessary CSS or JS libraries or custom stylesheets here -->
-  <style>
-    .card {
-      height: 100%;
-    }
+<title>Add Parcel</title>
 
-    .img-fluid {
-      height: 700px;
-      object-fit: cover;
-    }
-
-    .form-outline {
-      margin-bottom: 0; /* Adjust the spacing as needed */
-    }
-
-    @media (min-width: 768px) {
-      .col-md-6:first-child {
-        order: 1;
-      }
-
-      .col-md-6:last-child {
-        order: 2;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container py-5">
-    <div class="row d-flex justify-content-center align-items-center">
-      <div class="col-md-6">
-        <div class="card my-4 shadow-3">
-          <img src="assets/images/parcel2.jpg" alt="Sample photo" class="img-fluid" />
-        </div>
+<div class="container py-5">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-md-6">
+      <div class="card my-4 shadow-3">
+        <img src="https://plus.unsplash.com/premium_photo-1663134275544-7d83fcfa0e54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Sample photo" class="img-fluid" />
       </div>
-      <div class="col-md-6">
-        <div class="card my-4 shadow-3">
-          <div class="card-body p-md-5 text-black">
-            <h3 class="mb-4 text-uppercase">Add Parcel</h3>
-            <div class="row">
-              <div class="form-outline mb-4">
-                <div class="form-outline">
-                  <input type="text" id="form3Example1m" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example1m">Name</label>
-                </div>
-              </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card my-4 shadow-3">
+        <div class="card-body p-md-5 text-black">
+          <h3 class="mb-4 text-uppercase">Add Parcel</h3>
+          <div class="row">
+            <div class="form-outline mb-4 col-md-12">
+              <input type="text" id="form3Example1m" class="form-control form-control-m" placeholder="Sender Name" [(ngModel)]="sendername" />
             </div>
-            <div class="form-outline mb-4">
-              <input type="text" id="form3Example8" class="form-control form-control-lg" [(ngModel)]="senderAddress"/>
-              <label class="form-label" for="form3Example8">Sender's Address</label>
+          </div>
+          <div class="row">
+            <div class="form-outline mb-4 col-md-12">
+              <input type="text" id="form3Example1m" class="form-control form-control-m" placeholder="Receiver Name" [(ngModel)]="receivername" />
             </div>
-            <div class="form-outline mb-4">
-              <input type="text" id="form3Example9" class="form-control form-control-lg" [(ngModel)]="mobnumber"/>
-              <label class="form-label" for="form3Example9">Receiver's Mobile number</label>
+          </div>
+          <div class="row">
+            <div class="form-outline mb-4 col-md-12">
+              <input type="text" id="form3Example8" class="form-control form-control-m" placeholder="Sender's Address" [(ngModel)]="senderaddress"/>
             </div>
-            <div class="form-outline mb-4">
-              <input type="text" id="form3Example3" class="form-control form-control-lg" [(ngModel)]="receiverAddress"/>
-              <label class="form-label" for="form3Example3">Receiver's Address</label>
+          </div>
+          <div class="row">
+            <div class="form-outline mb-4 col-md-12">
+              <input type="text" id="form3Example3" class="form-control form-control-m" placeholder="Receiver's Address" [(ngModel)]="recieveraddress"/>
             </div>
-            <div class="form-outline mb-4">
-              <input type="text" id="form3Example2" class="form-control form-control-lg" [(ngModel)]="weight"/>
-              <label class="form-label" for="form3Example2">Weight</label>
+          </div>
+          <div class="row">
+            <div class="form-outline mb-4 col-md-12">
+              <input type="text" id="form3Example9" class="form-control form-control-m" placeholder="Mobile No:" [(ngModel)]="recieverPhno"/>
             </div>
-            <div class="d-flex justify-content-end pt-3">
-              <button type="button" class="btn btn-success btn-lg ms-2" style="background-color:hsl(210, 100%, 50%)">Place order</button>
-            </div>
+          </div>
+          
+          <div class="d-flex justify-content-end pt-3">
+            <button type="button" class="btn btn-success btn-m ms-2" style="background-color:hsl(210, 100%, 50%)" (click)="add()">Place order</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div>
-    <app-footer></app-footer>
-  </div>
-  <!-- Add any necessary JS scripts or references here -->
-</body>
+</div>
 
-</html>
+<div>
+  <app-footer></app-footer>
+</div>
 
-
-
-
-
-   <!-- <div class="container py-5">
-    <div class="row justify-content-center align-items-center">
-      <div class="col">
-        <div class="card my-4 shadow-3">
-          <div class="row g-0">
-            <div class="col-xl-6 d-xl-block bg-image">
-              <img src="https://mdbcdn.b-cdn.net/img/Others/extended-example/delivery.webp" alt="Sample photo" class="img-fluid" />
-              <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
-                <div class="justify-content-center align-items-center h-100">
-                  <div class="text-center" style="margin-top: 220px;">
-                    <i class="fas fa-truck text-white fa-3x"></i>
-                    <p class="text-white title-style">Lorem ipsum delivery</p>
-                    <p class="text-white mb-0"></p>
-  
-                    <figure class="text-center mb-0">
-                      <blockquote class="blockquote text-white">
-                        <p class="pb-3">
-                          <i class="fas fa-quote-left fa-xs text-primary" style="color: hsl(210, 100%, 50%) ;"></i>
-                          <span class="lead font-italic">Everything at your doorstep.</span>
-                          <i class="fas fa-quote-right fa-xs text-primary" style="color: hsl(210, 100%, 50%) ;"></i>
-                        </p>
-                      </blockquote>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-6">
-              <div class="card-body p-md-5 text-black">
-                <h3 class="mb-4 text-uppercase">Delivery Info</h3>
-                <form>
-                  <div class="mb-4">
-                    <label for="firstName" class="form-label">First name</label>
-                    <input type="text" id="firstName" class="form-control" />
-                  </div>
-                  <div class="mb-4">
-                    <label for="lastName" class="form-label">Last name</label>
-                    <input type="text" id="lastName" class="form-control" />
-                  </div>
-                  <div class="mb-4">
-                    <label for="address" class="form-label">Address</label>
-                    <input type="text" id="address" class="form-control" />
-                  </div>
-                  <div class="row mb-4">
-                    <div class="col-md-6">
-                      <label for="state" class="form-label">State</label>
-                      <select id="state" class="form-select">
-                        <option value="">Select state</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="city" class="form-label">City</label>
-                      <select id="city" class="form-select">
-                        <option value="">Select city</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="mb-4">
-                    <label for="zip" class="form-label">Zip</label>
-                    <input type="text" id="zip" class="form-control" />
-                  </div>
-                  <div class="mb-4">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" id="email" class="form-control" />
-                  </div>
-                  <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-success" style="background-color: hsl(210, 100%, 50%)">Place order</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    -->
+<script>
+function showAlert() {
+  alert('Order placed successfully!');
+}
+</script>

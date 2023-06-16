@@ -9,3 +9,58 @@
     font-weight: 400;
     color: hsl(52, 0%, 98%);
     } */
+    .card {
+        height: 100%;
+      }
+  
+      .img-fluid {
+        height: 600px;
+        object-fit: cover;
+        width: 500px
+      }
+  
+      .form-outline {
+        margin-bottom: 0; /* Adjust the spacing as needed */
+      }
+  
+      @media (min-width: 768px) {
+        .col-md-6:first-child {
+          order: 1;
+        }
+  
+        .col-md-6:last-child {
+          order: 2;
+        }
+      }
+      
+
+      body {
+        padding: 20px;
+      }
+    
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    
+      .card {
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+     
+    
+      .card-body {
+        padding: 40px;
+      }
+    
+      .form-control {
+        margin-bottom: 20px;
+      }
+    
+      .btn-success {
+        background-color: hsl(210, 100%, 50%);
+        color: #fff;
+      }

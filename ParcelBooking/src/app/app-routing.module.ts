@@ -10,6 +10,8 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { ParcelformComponent } from './parcelform/parcelform.component';
 import { SignupComponent } from './signup/signup.component';
 import { TrackingComponent } from './tracking/tracking.component';
+import { ViewParcelComponent } from './view-parcel/view-parcel.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,7 +24,8 @@ const routes: Routes = [
   {path:'mainpage/parcelform', component:ParcelformComponent},
   {path:'tracking',component:TrackingComponent},
   {path:'admindashboard',component:AdminDashboardComponent},
-  {path:'adminhome', component:AdminhomeComponent}
+  {path:'adminhome', component:AdminhomeComponent},
+  {path:'viewparcel', component:ViewParcelComponent}
 ];
 
 @NgModule({

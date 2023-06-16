@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -19,6 +18,10 @@ import { TrackingComponent } from './tracking/tracking.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 
+
+import { HttpClientModule } from '@angular/common/http';
+import { ViewParcelComponent } from './view-parcel/view-parcel.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,8 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
     FooterComponent,
     TrackingComponent,
     AdminDashboardComponent,
-    AdminhomeComponent
+    AdminhomeComponent,
+    ViewParcelComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,8 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
     BrowserAnimationsModule,
     MatSelectModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    HttpClientModule
   
    
 
