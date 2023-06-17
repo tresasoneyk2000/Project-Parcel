@@ -21,6 +21,7 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ViewParcelComponent } from './view-parcel/view-parcel.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ViewParcelComponent } from './view-parcel/view-parcel.component';
     MatSelectModule,
     MatButtonModule,
     MatMenuModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   
    
 

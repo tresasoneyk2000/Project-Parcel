@@ -1,4 +1,4 @@
-.parcel-table {
+/* .parcel-table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
@@ -114,7 +114,7 @@
   }
   .tracking-button {
     margin-left: 10px; /* Add margin to create space between buttons */
-  }
+  
   .popup {
     position: fixed;
     top: 0;
@@ -239,4 +239,4 @@
   }
   
   /* Add more custom CSS styles as needed */
-  
+   /* */

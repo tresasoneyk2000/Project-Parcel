@@ -9,20 +9,9 @@ import { Parcel } from './model/parcel.model';
 export class ParcelService {
   private baseURL = "http://localhost:8090/parcels";
 
-
-
-
-  constructor(private httpClient: HttpClient) { }
-
-
-
-
-  addParcel(parcel:Parcel): Observable<Parcel>{
-
-
-
-
-     return this.httpClient.post<Parcel>(`${this.baseURL}/add`, parcel);
+constructor(private httpClient: HttpClient) { }
+addParcel(parcel:Parcel): Observable<Parcel>{
+return this.httpClient.post<Parcel>(`${this.baseURL}/add`, parcel);
 
   }
 
