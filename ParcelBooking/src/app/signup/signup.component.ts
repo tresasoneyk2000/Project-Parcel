@@ -19,6 +19,7 @@ export class SignupComponent implements OnInit {
     password:string;
     signup1:Signup;
     successMessage:string;
+    usernameExists: boolean = false;
   
   constructor(private formBuilder: FormBuilder, private router: Router,private signupservice:SignupService) { }
   

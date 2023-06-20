@@ -10,7 +10,7 @@ import { CustomerService } from '../customer.service';
 export class LoginComponent {
   
   constructor(private router: Router,private customerService:CustomerService) {}
-  usernameExists: boolean = false;
+ 
   username: string 
   password: string ;
   

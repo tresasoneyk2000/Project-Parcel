@@ -20,6 +20,6 @@ export class SignupService {
     
   
     checkUsernameExists(username: string) {
-      return this.httpClient.get<boolean>(`${this.apiUrl}/check-username/${username}`);
+      return this.httpClient.get<boolean>(`${this.apiUrl}/checkusername/${username}`);
     }
 }
