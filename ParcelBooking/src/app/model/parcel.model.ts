@@ -8,6 +8,7 @@ export class Parcel {
   recieveraddress:string;
 
   recieverPhno:number;
+  // username:string;
   
     // constructor(
     //   id: number,

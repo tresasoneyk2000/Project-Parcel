@@ -9,6 +9,7 @@ import { ParcelService } from '../parcel.service';
   styleUrls: ['./parcelform.component.css']
 })
 export class ParcelformComponent {
+  // const uname = localStorage.getItem('uname') ?? '';
   sendername:string;
 
   receivername:string;
@@ -33,13 +34,18 @@ export class ParcelformComponent {
 
 
   id:number;
+  
+  // uname: any;
 
  
 
 
 
 
-  constructor(private parcelservice:ParcelService, private router:Router){}
+  constructor(private parcelservice:ParcelService, private router:Router){
+    const uname= localStorage.getItem('uname') ?? '';
+  
+  }
 
 
 
@@ -47,7 +53,7 @@ export class ParcelformComponent {
    add(){
 
      this.submitted = true;
-
+   
      this.parcel1= {sendername:this.sendername,receivername:this.receivername,senderaddress:this.senderaddress,recieveraddress:this.recieveraddress,recieverPhno:this.recieverPhno};
 
      console.log(this.parcel1);

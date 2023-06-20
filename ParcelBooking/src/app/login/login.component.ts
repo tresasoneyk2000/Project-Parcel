@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CustomerService } from '../customer.service';
 
 @Component({
   selector: 'app-login',
@@ -7,17 +8,29 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private router: Router) {}
-  email: string | undefined;
-  password: string | undefined;
+  
+  constructor(private router: Router,private customerService:CustomerService) {}
+  usernameExists: boolean = false;
+  username: string 
+  password: string ;
+  
+  
+  
+
 
   login() {
     // Perform login logic here
     console.log('Login clicked');
-    console.log('Email:', this.email);
+    console.log('Email:', this.username);
     console.log('Password:', this.password);
+   localStorage.setItem('uname',this.username);
+   console.log(localStorage);
   }
+ 
+   
+  
   goToSignup() {
+    
     this.router.navigate(['/signup']);
   }
 }

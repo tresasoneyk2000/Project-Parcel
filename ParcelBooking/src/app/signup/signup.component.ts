@@ -32,7 +32,10 @@ export class SignupComponent implements OnInit {
       validators: this.passwordMatchValidator
     });
   }
-  
+  checkUsername() {
+    this.signupservice.checkUsernameExists(this.username)
+      .subscribe(usernameExists => this.usernameExists = usernameExists);
+  }
   onSubmit() {
    
     if (this.registrationForm.valid) {

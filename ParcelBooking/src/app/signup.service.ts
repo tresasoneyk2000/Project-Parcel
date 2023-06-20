@@ -15,4 +15,11 @@ export class SignupService {
   return this.httpClient.post<Signup>(`${this.baseURL}/create`, signup);
   
     }
+    private apiUrl = 'http://localhost:8090/customer'; // Replace with your backend API URL
+
+    
+  
+    checkUsernameExists(username: string) {
+      return this.httpClient.get<boolean>(`${this.apiUrl}/check-username/${username}`);
+    }
 }
