@@ -1,6 +1,6 @@
 
 
-<form action="#" (ngSubmit)="submit()" #myForm="ngForm">
+<!-- <form action="#" (ngSubmit)="submit()" #myForm="ngForm">
 <section class="Form my-4 mx-5">
   <div class=" container">
     <div class="row no-gutters">
@@ -46,17 +46,17 @@
 
 
             
-            </div>
+            <!-- </div>
           </div>
         <!-- </section> -->
-          </form>
+          <!-- </form> --> 
 <!-- 
-  
-            <form [formGroup]="signupForm" (ngSubmit)="signup()">
-              <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" class="form-control" formControlName="username">
-                <div *ngIf="username?.invalid && username?.touched" class="text-danger">
+   -->
+            <!-- <form [formGroup]="signupForm" (ngSubmit)="signup()"> -->
+              <!-- <div class="form-group"> -->
+                <!-- <label for="username">Username</label> -->
+                <!-- <input type="text" id="username" class="form-control" formControlName="username"> -->
+                <!-- <div *ngIf="username?.invalid && username?.touched" class="text-danger"> -->
                   <!-- Display error message for invalid username -->
                   <!-- <span *ngIf="username?.errors?.required">Username is required.</span>
                 </div>
@@ -85,9 +85,63 @@
               <!-- <button type="submit" class="btn btn-primary" [disabled]="signupForm.invalid">Sign Up</button>
               <button type="button" class="btn btn-link" (click)="goToLogin()">Go to Login</button>
             </form> --> 
-            
-            
+            <!-- neeeew -->
             
 
-
-             
+            <section class="Form my-4 mx-5">
+              <div class="container">
+                <div class="row no-gutters">
+                  <div class="col-lg-5">
+                    <img src="assets/gif/reggif.gif" class="img-fluid" alt="" width="850" height="700">
+                  </div>
+                  <div class="col-lg-7 px-5 pt-5">
+                    <h1 class="font-weight-bold py-3">Sign up</h1>
+                    <h4>Register here</h4>
+                    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+                      <div class="form-row">
+                        <div class="col-lg-7">
+                          <input type="text" placeholder="Username" formControlName="username" class="form-control my-3 p-3" [(ngModel)]="username">
+                          <div *ngIf="registrationForm.get('username')?.invalid && registrationForm.get('username')?.touched" class="text-danger">
+                            Username is required.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-lg-7">
+                          <input type="email" placeholder="Email-Address" formControlName="email" class="form-control my-3 p-3" [(ngModel)]="email">
+                          <div *ngIf="registrationForm.get('email')?.invalid && registrationForm.get('email')?.touched" class="text-danger">
+                            Please enter a valid email address.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-lg-7">
+                          <input type="password" placeholder="Password" formControlName="password" class="form-control my-3 p-3" required  [(ngModel)]="password">
+                          <div *ngIf="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched" class="text-danger">
+                            Password is required.
+                          </div>
+                          <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-lg-7">
+                          <input type="password" placeholder="Confirm Password" formControlName="confirmPassword" class="form-control my-3 p-3" required>
+                          <div *ngIf="registrationForm.get('confirmPassword')?.invalid && registrationForm.get('confirmPassword')?.touched" class="text-danger">
+                            Passwords do not match.
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="form-row">
+                        <div class="col-lg-7">
+                          <button type="submit" class="btn1" [disabled]="registrationForm.invalid || registrationForm.hasError('passwordsMismatch')">Sign up</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+            
