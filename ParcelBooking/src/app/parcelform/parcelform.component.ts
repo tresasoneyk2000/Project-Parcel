@@ -27,23 +27,18 @@ export class ParcelformComponent {
   submitted = false;
 
   submits=false;
+  id:number|null;
 
   successMessage: string;
+  falimessage:string;
 
-
-
-
-  id:number;
+  // id:number;
+  
   
   // uname: any;
 
- 
-
-
-
-
-  constructor(private parcelservice:ParcelService, private router:Router){
-    const uname= localStorage.getItem('uname') ?? '';
+ constructor(private parcelservice:ParcelService, private router:Router){
+    
   
   }
 
@@ -51,19 +46,20 @@ export class ParcelformComponent {
 
 
    add(){
-
+    const uname= localStorage.getItem('uname') ?? '';
      this.submitted = true;
    
-     this.parcel1= {sendername:this.sendername,receivername:this.receivername,senderaddress:this.senderaddress,recieveraddress:this.recieveraddress,recieverPhno:this.recieverPhno};
+     this.parcel1= {id:null,sendername:this.sendername,receivername:this.receivername,senderaddress:this.senderaddress,recieveraddress:this.recieveraddress,recieverPhno:this.recieverPhno,username:uname};
 
      console.log(this.parcel1);
-
+     if(this.parcel1 != null){
      this.parcelservice.addParcel(this.parcel1).subscribe(data=>{
 
       this.successMessage = 'Parcel added successfully';
       alert(this.successMessage);
       this.router.navigate(['/viewparcel']);
-
+     
+    
      },
 
      error=>{
@@ -71,5 +67,7 @@ export class ParcelformComponent {
       console.log('error');
 
      });
-
-    }}
+     this.falimessage='please fill the form';
+     alert(this.falimessage);
+    }
+  }}

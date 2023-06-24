@@ -1,4 +1,7 @@
+import { LoginComponent } from "../login/login.component";
+
 export class Parcel {
+  id:number|null;
   sendername:string;
 
   receivername:string;
@@ -8,7 +11,7 @@ export class Parcel {
   recieveraddress:string;
 
   recieverPhno:number;
-  // username:string;
+  username:string;
   
     // constructor(
     //   id: number,

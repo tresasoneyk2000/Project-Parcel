@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class MainpageComponent {
 
+  // uname= localStorage.getItem('uname');
+
+
+ uname= localStorage.getItem('uname') ?? '';
+  constructor(){
+  console.log(this.uname);
+  console.log(this.uname);
+  }
 }

@@ -10,16 +10,16 @@
         <th>View Parcel</th>
         <th>Tracking</th>
       </tr>
-      <tr>
-        <td>1</td>
-        <td><button>View</button></td>
+      <tr *ngFor="let parcel of parcels">
+        <td>{{parcel.id}}</td>
+        <td><button  (click)="viewdetails(parcel.id)">View</button></td>
         <td><button>Track</button></td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td>2</td>
         <td><button>View</button></td>
         <td><button>Track</button></td>
-      </tr>
+      </tr> -->
       <!-- Add more rows as needed -->
     </table>
   </div>

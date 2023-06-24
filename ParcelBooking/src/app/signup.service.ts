@@ -8,18 +8,22 @@ import { Signup } from './model/signup';
 })
 export class SignupService {
 
-  private baseURL = "http://localhost:8090/customer";
+  private baseURL = "http://localhost:8091/customer";
 
   constructor(private httpClient: HttpClient) { }
   addParcel(signup:Signup): Observable<Signup>{
   return this.httpClient.post<Signup>(`${this.baseURL}/create`, signup);
   
     }
-    private apiUrl = 'http://localhost:8090/customer'; // Replace with your backend API URL
+    private apiUrl = 'http://localhost:8091/customer'; // Replace with your backend API URL
 
     
   
     checkUsernameExists(username: string) {
       return this.httpClient.get<boolean>(`${this.apiUrl}/checkusername/${username}`);
+    }
+
+    logincheck(username:string,password:string){
+      return this.httpClient.get<boolean>(`${this.apiUrl}/login/${username}/${password}`);
     }
 }

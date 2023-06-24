@@ -27,7 +27,7 @@
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css",
-              "D:/PROJECT/ParcelBooking/node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "C:/Users/245199/Desktop/frontend/Project-Parcel/ParcelBooking/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             
             "scripts": [
@@ -94,7 +94,7 @@
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css",
-              "D:/PROJECT/ParcelBooking/node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "C:/Users/245199/Desktop/frontend/Project-Parcel/ParcelBooking/node_modules/bootstrap/dist/css/bootstrap.min.css"
               
             ],
             "scripts": [{
